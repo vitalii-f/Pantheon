@@ -53,7 +53,7 @@
     overflow-x: scroll;
 }
 
-.gallery__trainer {
+.gallery__personal {
     position: relative;
 }
 
@@ -96,4 +96,12 @@
     left: 105%;
     top: 48%;
     cursor: pointer;
+}
+
+.gallery_control {
+    z-index: 3;
+}
+
+path {
+    z-index: 1;
 }
