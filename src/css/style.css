@@ -1,0 +1,99 @@
+:root {
+    --color-primary: #F7931E;
+}
+
+#hero {
+    height: 100vh;
+    background-image: url("../img/hero_bg_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/btn_hero.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 290px;
+    height: 68px;
+    text-decoration: none;
+}
+
+.life__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/btn_white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 280px;
+    height: 68px;
+    text-decoration: none;
+}
+
+#advantages .col {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+#advantages .col:hover {
+    scale: 1.1;
+    border-bottom: solid 1px #F7931E;
+}
+
+.gallery {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+.gallery__trainer {
+    position: relative;
+}
+
+.gallery__gym {
+    position: relative;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 4px;
+    background-color: white;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    height: 60px;
+    border-radius: 20px;
+    background-color: orange;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.btn_prev:hover path {
+    fill: var(--color-primary);
+}
+
+.btn_next:hover path {
+    fill: var(--color-primary);
+}
+
+.btn_prev {
+    position: absolute;
+    left: -7%;
+    top: 48%;
+    cursor: pointer;
+}
+
+.btn_next {
+    position: absolute;
+    left: 105%;
+    top: 48%;
+    cursor: pointer;
+}
