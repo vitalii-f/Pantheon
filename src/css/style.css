@@ -2,11 +2,21 @@
     --color-primary: #F7931E;
 }
 
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
 #hero {
     height: 100vh;
     background-image: url("../img/hero_bg_mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (min-width: 768px) {
+    #hero {
+        background-image: url("../img/hero_bg_desktop.png");
+    }
 }
 
 .hero__button {
@@ -53,12 +63,28 @@
     overflow-x: scroll;
 }
 
+.gallery:che {
+    
+}
+
 .gallery__personal {
     position: relative;
 }
 
 .gallery__gym {
     position: relative;
+}
+
+.gallery__trainer {
+    position: relative;
+}
+
+.gallery__trainer .gallery {
+    gap: 0 40px;
+}
+
+.gallery__item {
+    min-width: 300px;
 }
 
 .gallery::-webkit-scrollbar {
@@ -104,4 +130,83 @@
 
 path {
     z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .btn_prev {
+        display: none;
+    }
+    
+    .btn_next {
+        display: none;
+    }
+}
+
+.subscription__slider > .col {
+    min-width: 900px;
+
+}
+
+.subscription__slider {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+.subscription__slider::-webkit-scrollbar {
+    height: 4px;
+    background-color: white;
+}
+
+.subscription__slider::-webkit-scrollbar-thumb {
+    height: 60px;
+    border-radius: 20px;
+    background-color: orange;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.cards a {
+    background-image: url("../img/button_orange.png");
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.cards > .col > h4 {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.cards > .col > a {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.cards > .col:hover h4{
+    color: var(--color-primary);
+}
+
+.cards > .col:hover a{
+    background-image: url("../img/button_orange_filled.png");
+    color: white !important;
+}
+
+.cta {
+    background-image: url("../img/cta_bg_mobile.png");
+}
+
+@media (min-width: 768px) {
+    .cta {
+        background-image: url("../img/cta_bg_desktop.png");
+    }
 }

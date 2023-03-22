@@ -10,7 +10,7 @@ for (let item of gallery_buttons) {
 
         const currentDirection = event.target.dataset.direction;
         console.log(currentDirection);
-        
+
         const usedGalley = document.querySelector(`.gallery__${currentType}`).firstElementChild;
 
         const slideWidth = usedGalley.clientWidth;
